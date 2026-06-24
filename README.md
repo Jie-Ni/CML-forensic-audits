@@ -10,7 +10,8 @@ The paper studies a closed-candidate forensic audit for reasoning-LLM distillati
 
 ## Repository Contents
 
-- `main.tex`, `supplementary.tex`, `sections/`, `tables/`, `references.bib`: LaTeX manuscript source.
+- `main.tex`, `supplementary.tex`, `references.bib`: single-file LaTeX manuscript and supplement sources for journal upload.
+- `main_modular.tex`, `supplementary_modular.tex`, `sections/`, `tables/`: editable modular source copies retained for traceability.
 - `main.pdf`, `supplementary.pdf`: compiled manuscript and supplementary material.
 - `figures/*.R`: R scripts used to regenerate the manuscript figures.
 - `figures/source/`: primary source tables and scored JSONL summaries used by the plotting scripts.
@@ -39,6 +40,13 @@ Rscript figures/import_external_fig1.R
 `figures/import_external_fig1.R` restores the selected Fig. 1 schematic after the R figure-regeneration pass.
 
 ## Rebuilding The Manuscript
+
+The upload-facing `main.tex` and `supplementary.tex` files are flattened single-file sources. To regenerate them from the modular copies, run:
+
+```bash
+python tools/flatten_latex_inputs.py --root . --input main_modular.tex --output main.tex
+python tools/flatten_latex_inputs.py --root . --input supplementary_modular.tex --output supplementary.tex
+```
 
 ```bash
 pdflatex main.tex

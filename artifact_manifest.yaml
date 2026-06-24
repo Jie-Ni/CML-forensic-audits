@@ -651,8 +651,8 @@ files:
     size: 1317794
     sha256: "d509aca227d2b35920dea4b87c36fddff9ad506cbd75d17dbfe9f47c70b85d23"
   - path: "main.tex"
-    size: 2109
-    sha256: "e058865131aa28d3494f3f6e5cee3802837b6e50a283cfd7232086b0b0acadce"
+    size: 54275
+    sha256: "b59e21dccee2453c4788532529342437c5f080267b393918da9404db17a107e9"
   - path: "references.bib"
     size: 35013
     sha256: "63ecc85998f16f0e632225615d717b2b2bb2a6cf360466397f5ef30cc3030eb9"
@@ -711,8 +711,8 @@ files:
     size: 2346
     sha256: "e0a1ac9811a4ddfe6a258147e5d22d9d82a8be204bd0f5f381b5151602d3a8ac"
   - path: "supplementary.tex"
-    size: 670
-    sha256: "c0cf14c1e5b88f4a6043c18e82c3d001b5f3c1fac55eb343ce7a2d051e90d7e0"
+    size: 11473
+    sha256: "417a7ed2b914b128384b32eb23eec6e4a00e8f121d3ce41a962356dd62091d35"
   - path: "tables/supp_adaptive_stress.tex"
     size: 775
     sha256: "af9c097b96d6c42bd6abd621ff341de09fb24d784cdd23073be529486582ce2e"
