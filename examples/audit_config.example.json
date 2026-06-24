@@ -1,0 +1,19 @@
+{
+  "input": "data/scored_traces.csv",
+  "candidate_summary_output": "outputs/candidate_summary.csv",
+  "decision_output": "outputs/decisions.csv",
+  "group_columns": ["task", "scenario"],
+  "required_columns": [
+    "task",
+    "scenario",
+    "trace_id",
+    "candidate_teacher",
+    "suspect_logp",
+    "reference_logp"
+  ],
+  "optional_columns": ["true_lineage", "label", "baseline_logp"],
+  "decision": {
+    "threshold": 0.0,
+    "minimum_margin": 0.0
+  }
+}

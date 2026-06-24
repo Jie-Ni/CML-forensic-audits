@@ -1,7 +1,0 @@
-epochs,false_positive_rate,dataset,auroc
-1,0.012,GSM8K,0.814
-1,0.012,MATH,0.785
-3,0.004,GSM8K,0.945
-3,0.004,MATH,0.912
-5,0,GSM8K,0.997
-5,0,MATH,0.993

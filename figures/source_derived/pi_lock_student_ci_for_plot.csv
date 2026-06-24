@@ -1,4 +1,0 @@
-condition_label,estimate,ci_low,ci_high
-All distilled,1.0056666666666667,0.935,1.075
-Cross-style,1.002,0.924,1.076
-Same-family,1.0156666666666667,0.94,1.087

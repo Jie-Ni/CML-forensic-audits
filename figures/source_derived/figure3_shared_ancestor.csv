@@ -1,3 +1,0 @@
-student_model,teacher_model,baseline_base_relative,cml_standard,cml_mtcr
-Qwen-7B-Distilled,Qwen-14B,0.133,0.998,0.999
-Llama-8B-Distilled,Llama-70B,0.118,0.992,0.998

@@ -1,8 +1,0 @@
-pandas
-pyarrow
-numpy
-vllm
-transformers
-datasets
-peft
-accelerate

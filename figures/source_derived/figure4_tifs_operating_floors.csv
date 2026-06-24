@@ -1,7 +1,0 @@
-lineage,setting,floor_auroc
-Llama lineage,cross-dataset,0.905
-Qwen lineage,cross-dataset,0.912
-Llama lineage,hyperparameter,0.981
-Qwen lineage,hyperparameter,0.984
-Llama lineage,reasoning-depth,0.915
-Qwen lineage,reasoning-depth,0.924

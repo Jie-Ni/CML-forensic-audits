@@ -1,4 +1,0 @@
-threshold,trace_size,label
-AUROC >= 0.99,200,200
-AUROC >= 0.99,500,500
-AUROC >= 0.95,100,100 both

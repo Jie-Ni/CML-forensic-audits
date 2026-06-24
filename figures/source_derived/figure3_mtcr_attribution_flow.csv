@@ -1,5 +1,0 @@
-student_model,gain_pp,stage,accuracy,lineage,student_short
-R1-Qwen-32B,22.2,standard CML,0.672,Qwen lineage,Qwen
-R1-Qwen-32B,22.2,CML+MTCR,0.894,Qwen lineage,Qwen
-R1-Llama-8B,21.7,standard CML,0.658,Llama lineage,Llama
-R1-Llama-8B,21.7,CML+MTCR,0.875,Llama lineage,Llama

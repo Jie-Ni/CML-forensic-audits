@@ -1,9 +1,0 @@
-experiment,condition,dataset,student_base,student_training,seed,auroc,tpr_at_1pct_fpr,fpr_zero,teacher_family,transfer_type,n_traces,n_students,provenance_note
-broader_student_matrix,within-family__CML,GSM8K,Qwen-Distilled,CML,pooled_3_seeds,0.995,0.991,0.002,DeepSeek-R1-Qwen,within-family,100,3,legacy_cross_architecture_summary_import_20260623
-broader_student_matrix,within-family__CML+MTCR,GSM8K,Qwen-Distilled,CML+MTCR,pooled_3_seeds,0.998,0.998,0.001,DeepSeek-R1-Qwen,within-family,100,3,legacy_cross_architecture_summary_import_20260623
-broader_student_matrix,within-family__CML,GSM8K,Llama-Distilled,CML,pooled_3_seeds,0.991,0.987,0.003,DeepSeek-R1-Llama,within-family,100,3,legacy_cross_architecture_summary_import_20260623
-broader_student_matrix,within-family__CML+MTCR,GSM8K,Llama-Distilled,CML+MTCR,pooled_3_seeds,0.996,0.994,0.002,DeepSeek-R1-Llama,within-family,100,3,legacy_cross_architecture_summary_import_20260623
-broader_student_matrix,cross-family__CML,GSM8K,Llama-Distilled,CML,pooled_3_seeds,0.935,0.884,0.015,DeepSeek-R1-Qwen,cross-family,100,3,legacy_cross_architecture_summary_import_20260623
-broader_student_matrix,cross-family__CML+MTCR,GSM8K,Llama-Distilled,CML+MTCR,pooled_3_seeds,0.958,0.912,0.008,DeepSeek-R1-Qwen,cross-family,100,3,legacy_cross_architecture_summary_import_20260623
-broader_student_matrix,cross-family__CML,GSM8K,Qwen-Distilled,CML,pooled_3_seeds,0.924,0.862,0.018,DeepSeek-R1-Llama,cross-family,100,3,legacy_cross_architecture_summary_import_20260623
-broader_student_matrix,cross-family__CML+MTCR,GSM8K,Qwen-Distilled,CML+MTCR,pooled_3_seeds,0.949,0.898,0.01,DeepSeek-R1-Llama,cross-family,100,3,legacy_cross_architecture_summary_import_20260623

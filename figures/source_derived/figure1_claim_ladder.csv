@@ -1,7 +1,0 @@
-y,x,label,fill,stroke
-Decision output,1,distillation flag,#CDEFE4,#047857
-Decision output,2,same-base recovery,#CDEFE4,#047857
-Attribution,1,"R1 sibling attribution
-via MTCR",#EEF2FF,#7C6BB5
-Audit input,1,suspect traces,#F8FAFC,#94A3B8
-Audit input,2,candidate scoring,#F8FAFC,#94A3B8

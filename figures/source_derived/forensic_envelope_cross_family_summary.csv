@@ -1,5 +1,0 @@
-transfer_label,method,auroc_mean,auroc_min,auroc_max,tpr_mean,fpr_mean,n_conditions
-cross family,CML,0.9295,0.924,0.935,0.873,0.0165,2
-cross family,CML+MTCR,0.9535,0.949,0.958,0.905,0.009000000000000001,2
-within family,CML,0.993,0.991,0.995,0.989,0.0025,2
-within family,CML+MTCR,0.997,0.996,0.998,0.996,0.0015,2

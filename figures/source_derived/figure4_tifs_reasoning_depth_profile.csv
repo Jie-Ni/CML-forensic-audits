@@ -1,9 +1,0 @@
-min_steps,model,auroc,lineage
-2,qwen_auroc,0.924,Qwen lineage
-2,llama_auroc,0.915,Llama lineage
-4,qwen_auroc,0.965,Qwen lineage
-4,llama_auroc,0.958,Llama lineage
-6,qwen_auroc,0.992,Qwen lineage
-6,llama_auroc,0.987,Llama lineage
-8,qwen_auroc,0.999,Qwen lineage
-8,llama_auroc,0.998,Llama lineage

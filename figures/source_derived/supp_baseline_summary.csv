@@ -1,9 +1,0 @@
-original_method,detection_auroc,same_family_auroc,sibling_attribution,fpr_zero,n_students,method_family
-Base-Relative Surplus,0.5199,0.121,0.3252,0.8134,5,comparison baseline
-Perplexity/Logprob Shift,0.5723,0.2005,0.3444,0.5453,5,comparison baseline
-Embedding MMD,0.6441,0.3423,0.3722,0.2904,5,comparison baseline
-Style Classifier (SVM/TF-IDF),0.7003999999999999,0.39030000000000004,0.4175,0.2033,5,comparison baseline
-Teacher Classifier (Logit-SFT),0.7139,0.3998,0.4419,0.1477,5,comparison baseline
-Model Provenance Testing (MPT),0.8722,0.6032,0.5761999999999999,0.0614,5,comparison baseline
-CML (Standard ours),0.9869,0.986,0.6639,0.0075,5,CML family
-CML+MTCR (Refined ours),0.9893,0.9873,0.8862,0,5,CML family

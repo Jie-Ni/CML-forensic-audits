@@ -1,4 +1,0 @@
-epochs,gsm8k_auroc,math_auroc,false_positive_rate
-1,0.814,0.785,0.012
-3,0.945,0.912,0.004
-5,0.997,0.993,0
