@@ -1,0 +1,13 @@
+type,candidate_teacher,mean_r,student_type,teacher
+ctrlC_ref,qwen2.5-14b,-1.0260338827688336,Human-ref control,Qwen2.5-14B
+ctrlC_ref,r1-distill-llama-8b,-1.340886406739903,Human-ref control,R1-Llama-8B
+ctrlC_ref,r1-distill-qwen-32b,-0.6602752956541263,Human-ref control,R1-Qwen-32B
+ctrlInst_qwen,qwen2.5-14b,3.616461395186153e-4,Qwen14B student,Qwen2.5-14B
+ctrlInst_qwen,r1-distill-llama-8b,-0.010102720315103146,Qwen14B student,R1-Llama-8B
+ctrlInst_qwen,r1-distill-qwen-32b,-0.004966972437857033,Qwen14B student,R1-Qwen-32B
+ctrlLlama_r1,qwen2.5-14b,-0.46434413573841576,R1-Llama student,Qwen2.5-14B
+ctrlLlama_r1,r1-distill-llama-8b,-0.03637522496613829,R1-Llama student,R1-Llama-8B
+ctrlLlama_r1,r1-distill-qwen-32b,-0.013584559722166439,R1-Llama student,R1-Qwen-32B
+suspect,qwen2.5-14b,-0.5514169835145952,R1-Qwen student,Qwen2.5-14B
+suspect,r1-distill-llama-8b,-0.07041166904058968,R1-Qwen student,R1-Llama-8B
+suspect,r1-distill-qwen-32b,-0.019083576701910673,R1-Qwen student,R1-Qwen-32B

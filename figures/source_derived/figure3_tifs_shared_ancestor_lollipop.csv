@@ -1,0 +1,7 @@
+student_model,teacher_model,lineage,method,auroc
+Qwen-7B-Distilled,Qwen-14B,Qwen lineage,base-relative,0.133
+Qwen-7B-Distilled,Qwen-14B,Qwen lineage,CML,0.998
+Qwen-7B-Distilled,Qwen-14B,Qwen lineage,CML+MTCR,0.999
+Llama-8B-Distilled,Llama-70B,Llama lineage,base-relative,0.118
+Llama-8B-Distilled,Llama-70B,Llama lineage,CML,0.992
+Llama-8B-Distilled,Llama-70B,Llama lineage,CML+MTCR,0.998

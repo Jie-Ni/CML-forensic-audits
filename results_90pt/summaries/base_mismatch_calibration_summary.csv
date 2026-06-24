@@ -1,0 +1,7 @@
+experiment,condition,dataset,reference_model,candidate_teacher,auroc,tpr_at_1pct_fpr,fpr_zero,calibration_bias,n_positive_traces,n_negative_traces,provenance_note
+base_mismatch,correct_base_reference,GSM8K,qwen2.5-7b,qwen2.5-14b,0.9983333333333333,1.0,0.0016666666666666668,1.0263955289083522,600,600,derived_from_existing_scored_matrix_without_new_inference
+base_mismatch,correct_base_reference,GSM8K,qwen2.5-7b,r1-distill-llama-8b,0.9975097384529772,0.989983305509182,0.0016666666666666668,1.3044066461169548,599,600,derived_from_existing_scored_matrix_without_new_inference
+base_mismatch,correct_base_reference,GSM8K,qwen2.5-7b,r1-distill-qwen-32b,0.992725,0.9516666666666667,0.0016666666666666668,0.6411917189522157,600,600,derived_from_existing_scored_matrix_without_new_inference
+base_mismatch,no_runnable_base_fallback,GSM8K,human_reference_fallback,qwen2.5-14b,0.49864305555555555,0.01,0.9983333333333333,0.00036164613951861213,600,600,derived_from_existing_scored_matrix_without_new_inference
+base_mismatch,no_runnable_base_fallback,GSM8K,human_reference_fallback,r1-distill-llama-8b,0.47895937673900946,0.01001669449081803,0.9983333333333333,-0.035713051394814954,599,600,derived_from_existing_scored_matrix_without_new_inference
+base_mismatch,no_runnable_base_fallback,GSM8K,human_reference_fallback,r1-distill-qwen-32b,0.478375,0.015,0.9983333333333333,-0.01908357670191063,600,600,derived_from_existing_scored_matrix_without_new_inference

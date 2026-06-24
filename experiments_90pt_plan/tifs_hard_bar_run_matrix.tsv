@@ -1,0 +1,46 @@
+run_id	priority	pillar	experiment	condition	dataset	student_base	teacher_family	unit	min_students	trace_budget	required_output	claim_gate
+TM-001	0	threat_model	documentation	owner_suspect_verifier_protocol	all	all	all	document	NA	NA	experiments_90pt_plan/TIFS_90PT_THREAT_MODEL.md	threat model is explicit
+ATK-001	1	adaptive_robustness	adaptive_attack	identity_control	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	adaptive attack baseline
+ATK-002	1	adaptive_robustness	adaptive_attack	paraphrase_second_model	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	paraphrase laundering boundary
+ATK-003	1	adaptive_robustness	adaptive_attack	answer_only_compression	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	answer-only laundering boundary
+ATK-004	1	adaptive_robustness	adaptive_attack	cot_compression	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	CoT compression boundary
+ATK-005	1	adaptive_robustness	adaptive_attack	style_rewrite	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	style rewriting boundary
+ATK-006	1	adaptive_robustness	adaptive_attack	temperature_top_p	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	decoding perturbation boundary
+ATK-007	1	adaptive_robustness	adaptive_attack	mixed_human_teacher_10pct	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	10 percent dilution boundary
+ATK-008	1	adaptive_robustness	adaptive_attack	mixed_human_teacher_25pct	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	25 percent dilution boundary
+ATK-009	1	adaptive_robustness	adaptive_attack	mixed_human_teacher_50pct	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	50 percent dilution boundary
+ATK-010	1	adaptive_robustness	adaptive_attack	mixed_human_teacher_75pct	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	75 percent dilution boundary
+ATK-011	1	adaptive_robustness	adaptive_attack	selective_low_score_traces	GSM8K	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/scored_matrices/tifs_adaptive_attack_trace_scores.parquet	selective training boundary
+ATK-012	1	adaptive_robustness	adaptive_attack	paraphrase_second_model	MATH	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/summaries/tifs_adaptive_attack_summary.csv	MATH laundering replication
+ATK-013	1	adaptive_robustness	adaptive_attack	style_rewrite	MATH	Qwen2.5-7B	R1-Qwen	trace_and_student	5	200	results_90pt/summaries/tifs_adaptive_attack_summary.csv	MATH style rewrite replication
+OPEN-101	2	open_set_false_accusation	open_set	source_teacher_present_closed_set	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_open_set_abstention_summary.csv	closed-set baseline with coverage
+OPEN-102	2	open_set_false_accusation	open_set	source_teacher_absent	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_open_set_abstention_summary.csv	unknown teacher abstention
+OPEN-103	2	open_set_false_accusation	open_set	sibling_teacher_absent	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_open_set_abstention_summary.csv	sibling false attribution control
+OPEN-104	2	open_set_false_accusation	open_set	unrelated_capable_teacher_present	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_open_set_abstention_summary.csv	unrelated teacher false attribution control
+OPEN-105	2	open_set_false_accusation	open_set	public_model_decoy	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_open_set_abstention_summary.csv	public decoy false accusation control
+OPEN-106	2	open_set_false_accusation	open_set	source_teacher_absent	MATH	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_open_set_abstention_summary.csv	MATH open-set replication
+XBT-001	3	cross_base_task	cross_base_task	current_qwen_math	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_cross_base_task_matrix.csv	current Qwen anchor
+XBT-002	3	cross_base_task	cross_base_task	non_qwen_llama_math	GSM8K	Llama-3.1-8B	R1-Llama	student	5	200	results_90pt/summaries/tifs_cross_base_task_matrix.csv	non-Qwen base math
+XBT-003	3	cross_base_task	cross_base_task	non_qwen_mistral_math	GSM8K	Mistral-7B	Mistral	student	5	200	results_90pt/summaries/tifs_cross_base_task_matrix.csv	Mistral base math
+XBT-004	3	cross_base_task	cross_base_task	qwen_math_stress	MATH	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_cross_base_task_matrix.csv	MATH task replication
+XBT-005	3	cross_base_task	cross_base_task	qwen_bbh_reasoning	BBH	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_cross_base_task_matrix.csv	non-math reasoning
+XBT-006	3	cross_base_task	cross_base_task	qwen_arc_reasoning	ARC-Challenge	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_cross_base_task_matrix.csv	ARC reasoning
+XBT-007	3	cross_base_task	cross_base_task	qwen_code_reasoning	MBPP	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_cross_base_task_matrix.csv	code reasoning
+XBT-008	3	cross_base_task	cross_base_task	llama_bbh_reasoning	BBH	Llama-3.1-8B	R1-Llama	student	5	200	results_90pt/summaries/tifs_cross_base_task_matrix.csv	non-Qwen non-math
+BASELINE-001	4	strong_baselines	baseline_head_to_head	base_relative	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_baseline_head_to_head.csv	natural statistic baseline
+BASELINE-002	4	strong_baselines	baseline_head_to_head	CML	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_baseline_head_to_head.csv	main method baseline
+BASELINE-003	4	strong_baselines	baseline_head_to_head	CML+MTCR	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_baseline_head_to_head.csv	calibrated attribution method
+BASELINE-004	4	strong_baselines	baseline_head_to_head	wadhwa_classifier	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_baseline_head_to_head.csv	teacher classifier baseline
+BASELINE-005	4	strong_baselines	baseline_head_to_head	model_provenance_testing	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_baseline_head_to_head.csv	MPT-style test baseline
+BASELINE-006	4	strong_baselines	baseline_head_to_head	embedding_mmd	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_baseline_head_to_head.csv	behavioral similarity baseline
+BASELINE-007	4	strong_baselines	baseline_head_to_head	style_classifier	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_baseline_head_to_head.csv	style baseline
+BASELINE-008	4	strong_baselines	baseline_head_to_head	perplexity_logprob	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_baseline_head_to_head.csv	simple likelihood baseline
+CI-001	5	statistical_power	student_level_ci	main_detection	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_student_level_ci.csv	main detection CI
+CI-002	5	statistical_power	student_level_ci	same_family_detection	GSM8K	Qwen2.5-7B	Qwen	student	5	200	results_90pt/summaries/tifs_student_level_ci.csv	same-family CI
+CI-003	5	statistical_power	student_level_ci	open_set_abstention	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_student_level_ci.csv	open-set CI
+CI-004	5	statistical_power	student_level_ci	adaptive_paraphrase	GSM8K	Qwen2.5-7B	R1-Qwen	student	5	200	results_90pt/summaries/tifs_student_level_ci.csv	adaptive attack CI
+CI-005	5	statistical_power	student_level_ci	cross_base_llama	GSM8K	Llama-3.1-8B	R1-Llama	student	5	200	results_90pt/summaries/tifs_student_level_ci.csv	cross-base CI
+REPRO-101	6	reproducibility	review_archive	raw_trace_archive	all	all	all	artifact	NA	NA	results_90pt/reproducibility/tifs_review_archive_manifest.tsv	raw trace review archive
+REPRO-102	6	reproducibility	review_archive	adapter_checkpoint_archive	all	all	all	artifact	NA	NA	results_90pt/reproducibility/tifs_review_archive_manifest.tsv	adapter checkpoint archive
+REPRO-103	6	reproducibility	review_archive	scored_matrix_archive	all	all	all	artifact	NA	NA	results_90pt/reproducibility/tifs_review_archive_manifest.tsv	scored matrix archive
+REPRO-104	6	reproducibility	review_archive	run_log_environment_archive	all	all	all	artifact	NA	NA	results_90pt/reproducibility/tifs_review_archive_manifest.tsv	run log and environment archive

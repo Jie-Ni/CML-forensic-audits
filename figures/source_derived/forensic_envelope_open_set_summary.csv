@@ -1,0 +1,17 @@
+condition,condition_label,student_group,abstention_mean,abstention_min,abstention_max,false_attr_mean,false_attr_min,false_attr_max,closed_set_accuracy,n_students
+sibling_teacher_absent,"sibling
+absent",controls,0.9991666666666666,0.995,1,8.333333333333334e-4,0,0.005,NA,6
+sibling_teacher_absent,"sibling
+absent",distilled students,0.5144444444444445,0.315,0.66,0.15833333333333333,0,0.515,0.7626964816745838,9
+source_teacher_absent,"source
+absent",controls,0.9991666666666666,0.995,1,8.333333333333334e-4,0,0.005,NA,6
+source_teacher_absent,"source
+absent",distilled students,0.5661111111111111,0.395,0.735,0.4338888888888889,0.265,0.605,0,9
+source_teacher_present_closed_set,"present
+closed",controls,0.9991666666666666,0.995,1,8.333333333333334e-4,0,0.005,NA,6
+source_teacher_present_closed_set,"present
+closed",distilled students,0.4627777777777778,0.315,0.55,0.2811111111111111,0.145,0.515,0.5037715929219893,9
+unrelated_capable_teacher_present,"unrelated
+present",controls,0.9991666666666666,0.995,1,8.333333333333334e-4,0,0.005,NA,6
+unrelated_capable_teacher_present,"unrelated
+present",distilled students,0.45833333333333337,0.285,0.55,0.2916666666666667,0.145,0.59,0.4933541760906606,9

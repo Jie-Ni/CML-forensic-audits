@@ -1,0 +1,33 @@
+method,method_label,metric,value,is_ours
+base_relative,BaseRel,detection AUROC,0.507,FALSE
+base_relative,BaseRel,same-family AUROC,0.106,FALSE
+base_relative,BaseRel,sibling attribution,0.315,FALSE
+base_relative,BaseRel,FPR0,0.82,FALSE
+perplexity_logprob,PPL,detection AUROC,0.559,FALSE
+perplexity_logprob,PPL,same-family AUROC,0.185,FALSE
+perplexity_logprob,PPL,sibling attribution,0.334,FALSE
+perplexity_logprob,PPL,FPR0,0.552,FALSE
+embedding_mmd,MMD,detection AUROC,0.633,FALSE
+embedding_mmd,MMD,same-family AUROC,0.328,FALSE
+embedding_mmd,MMD,sibling attribution,0.363,FALSE
+embedding_mmd,MMD,FPR0,0.297,FALSE
+style_classifier,Style,detection AUROC,0.689,FALSE
+style_classifier,Style,same-family AUROC,0.376,FALSE
+style_classifier,Style,sibling attribution,0.408,FALSE
+style_classifier,Style,FPR0,0.21,FALSE
+wadhwa_classifier,Teacher,detection AUROC,0.703,FALSE
+wadhwa_classifier,Teacher,same-family AUROC,0.386,FALSE
+wadhwa_classifier,Teacher,sibling attribution,0.433,FALSE
+wadhwa_classifier,Teacher,FPR0,0.154,FALSE
+model_provenance_testing,MPT,detection AUROC,0.86,FALSE
+model_provenance_testing,MPT,same-family AUROC,0.589,FALSE
+model_provenance_testing,MPT,sibling attribution,0.566,FALSE
+model_provenance_testing,MPT,FPR0,0.067,FALSE
+CML,CML,detection AUROC,0.975,TRUE
+CML,CML,same-family AUROC,0.972,TRUE
+CML,CML,sibling attribution,0.654,TRUE
+CML,CML,FPR0,0.013,TRUE
+CML+MTCR,MTCR,detection AUROC,0.977,TRUE
+CML+MTCR,MTCR,same-family AUROC,0.972,TRUE
+CML+MTCR,MTCR,sibling attribution,0.876,TRUE
+CML+MTCR,MTCR,FPR0,0,TRUE

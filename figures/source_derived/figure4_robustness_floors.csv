@@ -1,0 +1,5 @@
+model,setting,floor_auroc,y_pos
+Llama lineage,Cross-dataset floor,0.905,1.88
+Qwen lineage,Cross-dataset floor,0.912,2.12
+Llama lineage,Hyperparameter floor,0.981,0.88
+Qwen lineage,Hyperparameter floor,0.984,1.12

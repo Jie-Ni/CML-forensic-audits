@@ -1,0 +1,6 @@
+path	required_for	expected_columns	purpose
+results_90pt/raw_trace_manifests/raw_trace_inputs.tsv	adaptive_laundering;base_mismatch;out_of_set_candidate;mtcr_raw_profiles	dataset,student_id,seed,true_teacher,base_reference,trace_path,label	Map real raw trace JSONL files into the 90-point execution matrix.
+results_90pt/raw_trace_manifests/candidate_teachers.tsv	adaptive_laundering;base_mismatch;out_of_set_candidate;mtcr_raw_profiles	candidate_teacher,role,include_in_closed_set,include_in_open_set	Define candidate teacher scorers and reference/base roles.
+results_90pt/raw_trace_manifests/external_rewrites.tsv	adaptive_laundering	run_id,condition,dataset,student_id,seed,external_rewrite_path	Attach model-generated paraphrase/self-rewrite trace files without fabricating them.
+results_90pt/raw_trace_manifests/student_training_inputs.tsv	broader_student_matrix	run_id,condition,dataset,student_base,student_training,seed,sft_jsonl,adapter_out_dir,trace_out_path	Define train/generate/score inputs for cross-base or stronger-student runs.
+results_90pt/raw_trace_manifests/mtcr_task_views.tsv	mtcr_raw_profiles	task_view,dataset,split,trace_path,reference_trace_path,candidate_teacher	Define per-view MTCR scoring inputs.

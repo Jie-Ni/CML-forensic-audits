@@ -1,0 +1,5 @@
+experiment,condition,dataset,student_base,true_teacher,candidate_set,pred_teacher,abstention_rate,false_attribution_rate,closed_set_accuracy,coverage,auroc,tpr_at_1pct_fpr,source_run_id
+open_set,source_teacher_absent,GSM8K,Qwen2.5-7B,Distilled (from Absent),closed_set_with_absent_or_decoy_candidate,ABSTAIN_OR_TOP_CANDIDATE,0.954,0.012,,0.988,,,pi_locked_result_summary_20260623
+open_set,sibling_teacher_absent,GSM8K,Qwen2.5-7B,Distilled (from Absent Sibling),closed_set_with_absent_or_decoy_candidate,ABSTAIN_OR_TOP_CANDIDATE,0.942,0.015,,0.985,,,pi_locked_result_summary_20260623
+open_set,unrelated_teacher,GSM8K,Qwen2.5-7B,Distilled (from Unrelated),closed_set_with_absent_or_decoy_candidate,ABSTAIN_OR_TOP_CANDIDATE,0.978,0.005,,0.995,,,pi_locked_result_summary_20260623
+open_set,public_decoy_present,GSM8K,Qwen2.5-7B,Clean/Human-Ref (ctrlC),closed_set_with_absent_or_decoy_candidate,ABSTAIN_OR_TOP_CANDIDATE,0.991,0.009,,0.991,,,pi_locked_result_summary_20260623

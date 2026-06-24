@@ -1,0 +1,19 @@
+parameter_type,parameter_value,model,auroc,lineage,parameter_numeric,parameter_order
+teacher temperature,0.2,qwen_auroc,0.998,Qwen lineage,0.2,1
+teacher temperature,0.2,llama_auroc,0.997,Llama lineage,0.2,1
+teacher temperature,0.5,qwen_auroc,0.999,Qwen lineage,0.5,2
+teacher temperature,0.5,llama_auroc,0.998,Llama lineage,0.5,2
+teacher temperature,0.8,qwen_auroc,0.997,Qwen lineage,0.8,3
+teacher temperature,0.8,llama_auroc,0.995,Llama lineage,0.8,3
+teacher temperature,1,qwen_auroc,0.995,Qwen lineage,1,4
+teacher temperature,1,llama_auroc,0.992,Llama lineage,1,4
+teacher temperature,1.2,qwen_auroc,0.984,Qwen lineage,1.2,5
+teacher temperature,1.2,llama_auroc,0.981,Llama lineage,1.2,5
+SFT learning rate,5e-6,qwen_auroc,0.991,Qwen lineage,5e-6,6
+SFT learning rate,5e-6,llama_auroc,0.988,Llama lineage,5e-6,6
+SFT learning rate,1e-5,qwen_auroc,0.998,Qwen lineage,1e-5,7
+SFT learning rate,1e-5,llama_auroc,0.996,Llama lineage,1e-5,7
+SFT learning rate,2e-5,qwen_auroc,0.999,Qwen lineage,2e-5,8
+SFT learning rate,2e-5,llama_auroc,0.998,Llama lineage,2e-5,8
+SFT learning rate,5e-5,qwen_auroc,0.987,Qwen lineage,5e-5,9
+SFT learning rate,5e-5,llama_auroc,0.984,Llama lineage,5e-5,9

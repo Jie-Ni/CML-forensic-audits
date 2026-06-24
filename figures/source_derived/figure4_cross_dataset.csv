@@ -1,0 +1,6 @@
+dataset,qwen_auroc,llama_auroc
+GSM8K,0.999,0.998
+SVAMP,0.982,0.979
+ASDiv,0.978,0.975
+MATH,0.953,0.948
+ARC-Challenge,0.912,0.905

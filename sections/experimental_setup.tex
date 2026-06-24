@@ -1,0 +1,86 @@
+\section{Experimental Setup}
+\label{sec:setup}
+
+\paragraph{Students and provenance labels.}
+Every student is a low-rank (LoRA) fine-tune~\citep{hu2022lora} of the same base,
+\textbf{Qwen2.5-7B-Instruct}~\citep{qwen2025qwen25}
+(rank $32$, $\alpha\!=\!64$, dropout $0.05$ on all attention and MLP projections; $\sim\!1.05\%$ of
+the $7.7$B parameters trainable), trained at sequence length $4096$ on
+$N_{\mathrm{train}}=800$ problems with AdamW (learning rate $10^{-4}$, cosine schedule, $3\%$ warmup,
+effective batch size $16$, bf16). The original CML grid uses the three-seed setting
+reported below; the MTCR sensitivity sweep stores checkpoints at $E\in\{1,3,5\}$
+distillation epochs, with $E=5$ serving as the full-duration setting. To avoid pseudoreplication we train each provenance type under
+$3$ seeds (independent LoRA initialization, data order, and generation), giving $n\!=\!3$ student
+draws per cell so detection is assessed at the \emph{student} level rather than by treating one
+student's traces as independent. Because we generate every training corpus ourselves, provenance is
+exact. The five provenance types are:
+\begin{description}[leftmargin=1.4em,itemsep=1pt]
+  \item[\texttt{suspect}] distilled from \textbf{DeepSeek-R1-Distill-Qwen-32B}~\citep{deepseekai2025r1} CoT traces (the
+        protected teacher $T^\star$; a reasoning-style, cross-family teacher);
+  \item[\texttt{ctrlInst}] distilled from \textbf{Qwen2.5-14B-Instruct} traces (a
+        \emph{same-family}, non-reasoning teacher---the within-family case);
+  \item[\texttt{ctrlLlama}] distilled from \textbf{DeepSeek-R1-Distill-Llama-8B} traces (a
+        \emph{shared-lineage} R1 sibling on a different base---the teacher-specificity probe);
+  \item[\texttt{ctrlC}] fine-tuned on \emph{human reference solutions} to the same problems, with
+        \emph{no} teacher CoT (the quality-confound probe; non-distilled);
+  \item[\texttt{ctrlA}] the base model itself, no fine-tuning (the clean non-distilled negative).
+\end{description}
+
+\paragraph{Tasks.}
+The primary grid is \textbf{GSM8K}~\citep{cobbe2021gsm8k}: the train split supplies distillation/SFT problems and the
+held-out test split the forensic trace pool ($N_{\mathrm{test}}=200$ problems, disjoint from SFT).
+We run a single-seed stress test on \textbf{MATH}~\citep{hendrycks2021math}
+(EleutherAI \texttt{hendrycks\_math}; longer, higher-entropy competition derivations,
+sequence length $8192$) to check whether the trace-level pattern survives outside
+GSM8K. The MTCR extension uses task-matched calibration views for sibling
+attribution and the epoch-sensitivity sweep; the current submission reports these
+views through aggregate source tables rather than a full per-task raw profile release.
+
+\paragraph{Trace generation and scoring.}
+Teacher and student traces are generated with vLLM~\citep{kwon2023vllm}
+(bfloat16, temperature $0.6$, top-$p$ $0.95$).
+Each student's $200$ held-out traces are scored under every candidate via the candidate's own
+\texttt{prompt\_logprobs} over the assistant span, \emph{re-tokenized with the candidate's tokenizer}
+(Eq.~\eqref{eq:scorelp}); this is the text-tier (T3) access regime. The surplus
+(Eq.~\eqref{eq:surplus}) is taken relative to the base Qwen2.5-7B-Instruct as $b$.
+
+\paragraph{Capability ladder.}
+To probe the quality/coverage source of resemblance directly, we additionally score all students
+under a \emph{same-family capability ladder}, Qwen2.5-Instruct at $\{1.5,3,7,14\}$B, none of which
+generated any student's traces except via the $7$B base.
+
+\paragraph{Evaluation.}
+The independent replicate is the trained student. We report student-level summaries
+for replicate separation and trace-level AUROC/TPR/FPR only as operating-curve
+resolution within a fixed audit pool. Significance uses a $B=10{,}000$ label
+permutation over the held-out trace scores, interpreted as an audit-operating test
+rather than as additional independent training replicates. The null's KS-uniformity
+check builds the null from one non-distilled control and evaluates the held-out
+control's right-tail $p$-values against $\mathrm{Uniform}(0,1)$. Attribution is the
+closed-set argmax over candidate teachers using the statistic being evaluated:
+the base-relative surplus for the baseline, $r_c(S)$ for standard CML, and the
+task-calibrated MTCR score for the MTCR attribution extension. We do not use this
+argmax outside the declared candidate set.
+
+\paragraph{Reviewer-stress result summaries.}
+In addition to the raw GSM8K scored matrices, the revised manuscript imports locked
+aggregate summaries for four reviewer stress families: adaptive trace transformations
+(answer-only, compressed, paraphrased, mixed-source, and related variants across
+GSM8K, MATH, BBH, ARC-Challenge, and MBPP), cross-base/cross-task transfer,
+open-set decoys, and head-to-head baselines. These PI-provided summary tables
+report adaptive AUROC, TPR@$1\%$FPR, FPR$_0$, confidence intervals, open-set
+abstention and false-attribution rates, baseline metrics, and student-level
+confidence intervals at the reported stratum level. The pasted tables do not carry
+raw seed identities; we therefore treat them as aggregate result sources for
+Figure~\ref{fig:pi_result_lock_suite} and the supplementary forensic-envelope
+diagnostic.
+
+\paragraph{Compute.}
+The reported GSM8K focused grid (three teacher trace sets, four LoRA students, five
+held-out trace sets, and scoring under six candidates) was run on a single MUSICA
+H100 node and completes in
+$\approx\!3.5$ minutes when generation and scoring are fanned across four GPUs. All models and
+datasets are public. The source package contains the plotting scripts and aggregate
+source tables needed to reproduce the manuscript figures. Code, plotting scripts,
+aggregate source tables, and the manuscript source are available at
+\url{https://github.com/Jie-Ni/CML-forensic-audits}.

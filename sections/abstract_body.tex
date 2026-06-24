@@ -1,0 +1,20 @@
+Reasoning large language models can be copied by distilling chain-of-thought traces
+into cheaper students, but provenance tests must separate descent from ordinary task
+competence. We study a forensic audit in which the suspect is observed only through
+output traces, candidate teachers are available for authorized likelihood scoring,
+and the suspect base is known or declared. The common base-relative likelihood
+surplus is confounded by candidate capability: in our GSM8K audit it false-alarms
+on a human-reference student (empirical false-positive rate, FPR, $0.81$) and misses
+same-family distillation (area under the receiver-operating characteristic curve,
+AUROC, $0.13$). Capability-matched likelihood (CML) instead compares suspect traces
+with a same-base non-distilled reference under the same candidate teacher. On
+three-seed Qwen2.5-7B-Instruct GSM8K students distilled from three teachers, CML
+reaches trace-level AUROC $0.997$, true positive rate at $1\%$ FPR $0.991$, and
+empirical FPR $0.2\%$; it also recovers same-family distillation (AUROC $0.998$). A
+single-seed MATH stress test shows the same pattern (AUROC $0.993$). Multi-Task
+Calibration Reference (MTCR) improves sibling-teacher attribution from
+$0.672$/$0.658$ to $0.894$/$0.875$. Aggregate stress summaries further test adaptive
+trace transformations, cross-base and cross-task transfer, open-set decoys, and
+student-level confidence intervals: CML+MTCR retains AUROC at least $0.930$ across
+the reported adaptive sweeps, the cross-base/task matrix has minimum AUROC $0.912$,
+and open-set false attribution stays at or below $2.0\%$.

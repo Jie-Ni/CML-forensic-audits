@@ -1,0 +1,13 @@
+stratum,method,auroc,tpr1,fpr0,task,stratum_short,text_colour
+all distilled,base-relative,0.5304094867518993,0.021122846025569762,0.8083333333333333,GSM8K,all distilled,#111827
+all distilled,CML,0.9966768575134334,0.990550305725403,0.0016666666666666668,GSM8K,all distilled,white
+cross-style,base-relative,0.7291826522101752,0.0316930775646372,0.8083333333333333,GSM8K,cross-style,#111827
+cross-style,CML,0.9959730330831248,0.9866555462885738,0.0016666666666666668,GSM8K,cross-style,white
+same-family,base-relative,0.13319444444444445,0,0.8083333333333333,GSM8K,same-family,#111827
+same-family,CML,0.9980833333333333,0.9983333333333333,0.0016666666666666668,GSM8K,same-family,white
+all distilled,base-relative,0.3461622073578595,0,0.89,MATH,all distilled,#111827
+all distilled,CML,0.9930852842809365,0.8913043478260869,0,MATH,all distilled,white
+cross-style,base-relative,0.4692462311557789,0,0.89,MATH,cross-style,#111827
+cross-style,CML,0.9912311557788944,0.8567839195979899,0,MATH,cross-style,white
+same-family,base-relative,0.101225,0,0.89,MATH,same-family,#111827
+same-family,CML,0.996775,0.96,0,MATH,same-family,white

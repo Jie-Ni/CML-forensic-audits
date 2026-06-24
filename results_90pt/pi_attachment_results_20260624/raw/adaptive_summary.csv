@@ -1,0 +1,161 @@
+task,evasion_attack,detection_method,auroc,auroc_ci_lower,auroc_ci_upper,tpr_at_1pct_fpr,fpr0,student_lineage
+GSM8K,Identity SFT (Naive),Base-Relative,0.53,0.511,0.549,0.021,0.808,Qwen2.5-7B
+GSM8K,Identity SFT (Naive),Base-Relative,0.529,0.51,0.548,0.02,0.809,Llama-3.1-8B
+GSM8K,Identity SFT (Naive),CML+MTCR,0.999,0.992,1.0,0.998,0.0,Qwen2.5-7B
+GSM8K,Identity SFT (Naive),CML+MTCR,0.998,0.991,1.0,0.997,0.001,Llama-3.1-8B
+GSM8K,Paraphrase Rewrite,Base-Relative,0.521,0.502,0.54,0.018,0.814,Qwen2.5-7B
+GSM8K,Paraphrase Rewrite,Base-Relative,0.52,0.501,0.539,0.018,0.815,Llama-3.1-8B
+GSM8K,Paraphrase Rewrite,CML+MTCR,0.985,0.971,0.999,0.975,0.002,Qwen2.5-7B
+GSM8K,Paraphrase Rewrite,CML+MTCR,0.984,0.97,0.998,0.973,0.003,Llama-3.1-8B
+GSM8K,Answer-Only SFT,Base-Relative,0.502,0.483,0.521,0.01,0.854,Qwen2.5-7B
+GSM8K,Answer-Only SFT,Base-Relative,0.502,0.483,0.521,0.01,0.855,Llama-3.1-8B
+GSM8K,Answer-Only SFT,CML+MTCR,0.952,0.938,0.966,0.92,0.005,Qwen2.5-7B
+GSM8K,Answer-Only SFT,CML+MTCR,0.951,0.937,0.965,0.919,0.006,Llama-3.1-8B
+GSM8K,CoT Compression,Base-Relative,0.515,0.496,0.534,0.015,0.82,Qwen2.5-7B
+GSM8K,CoT Compression,Base-Relative,0.514,0.495,0.533,0.014,0.821,Llama-3.1-8B
+GSM8K,CoT Compression,CML+MTCR,0.978,0.964,0.992,0.962,0.003,Qwen2.5-7B
+GSM8K,CoT Compression,CML+MTCR,0.977,0.963,0.991,0.96,0.004,Llama-3.1-8B
+GSM8K,Style Rewrite,Base-Relative,0.51,0.491,0.529,0.012,0.832,Qwen2.5-7B
+GSM8K,Style Rewrite,Base-Relative,0.509,0.49,0.528,0.012,0.833,Llama-3.1-8B
+GSM8K,Style Rewrite,CML+MTCR,0.965,0.951,0.979,0.945,0.004,Qwen2.5-7B
+GSM8K,Style Rewrite,CML+MTCR,0.964,0.95,0.978,0.943,0.005,Llama-3.1-8B
+GSM8K,Temperature/Top-p,Base-Relative,0.528,0.509,0.547,0.02,0.81,Qwen2.5-7B
+GSM8K,Temperature/Top-p,Base-Relative,0.528,0.509,0.547,0.02,0.811,Llama-3.1-8B
+GSM8K,Temperature/Top-p,CML+MTCR,0.992,0.985,0.999,0.984,0.001,Qwen2.5-7B
+GSM8K,Temperature/Top-p,CML+MTCR,0.991,0.984,0.998,0.983,0.002,Llama-3.1-8B
+GSM8K,Mixed Traces (50%),Base-Relative,0.512,0.493,0.531,0.014,0.828,Qwen2.5-7B
+GSM8K,Mixed Traces (50%),Base-Relative,0.511,0.492,0.53,0.014,0.829,Llama-3.1-8B
+GSM8K,Mixed Traces (50%),CML+MTCR,0.954,0.94,0.968,0.932,0.008,Qwen2.5-7B
+GSM8K,Mixed Traces (50%),CML+MTCR,0.953,0.939,0.967,0.931,0.009,Llama-3.1-8B
+GSM8K,Low-Score Selection,Base-Relative,0.518,0.499,0.537,0.016,0.822,Qwen2.5-7B
+GSM8K,Low-Score Selection,Base-Relative,0.517,0.498,0.536,0.015,0.823,Llama-3.1-8B
+GSM8K,Low-Score Selection,CML+MTCR,0.971,0.957,0.985,0.95,0.004,Qwen2.5-7B
+GSM8K,Low-Score Selection,CML+MTCR,0.97,0.956,0.984,0.948,0.005,Llama-3.1-8B
+MATH,Identity SFT (Naive),Base-Relative,0.529,0.51,0.548,0.021,0.81,Qwen2.5-7B
+MATH,Identity SFT (Naive),Base-Relative,0.528,0.509,0.547,0.02,0.81,Llama-3.1-8B
+MATH,Identity SFT (Naive),CML+MTCR,0.996,0.989,1.0,0.994,0.002,Qwen2.5-7B
+MATH,Identity SFT (Naive),CML+MTCR,0.995,0.988,1.0,0.994,0.002,Llama-3.1-8B
+MATH,Paraphrase Rewrite,Base-Relative,0.52,0.501,0.539,0.018,0.816,Qwen2.5-7B
+MATH,Paraphrase Rewrite,Base-Relative,0.519,0.5,0.538,0.018,0.816,Llama-3.1-8B
+MATH,Paraphrase Rewrite,CML+MTCR,0.982,0.968,0.996,0.971,0.004,Qwen2.5-7B
+MATH,Paraphrase Rewrite,CML+MTCR,0.981,0.967,0.995,0.97,0.004,Llama-3.1-8B
+MATH,Answer-Only SFT,Base-Relative,0.501,0.482,0.52,0.01,0.856,Qwen2.5-7B
+MATH,Answer-Only SFT,Base-Relative,0.5,0.481,0.519,0.01,0.856,Llama-3.1-8B
+MATH,Answer-Only SFT,CML+MTCR,0.949,0.935,0.963,0.917,0.007,Qwen2.5-7B
+MATH,Answer-Only SFT,CML+MTCR,0.948,0.934,0.962,0.915,0.007,Llama-3.1-8B
+MATH,CoT Compression,Base-Relative,0.514,0.495,0.533,0.015,0.822,Qwen2.5-7B
+MATH,CoT Compression,Base-Relative,0.513,0.494,0.532,0.015,0.822,Llama-3.1-8B
+MATH,CoT Compression,CML+MTCR,0.975,0.961,0.989,0.959,0.005,Qwen2.5-7B
+MATH,CoT Compression,CML+MTCR,0.974,0.96,0.988,0.957,0.005,Llama-3.1-8B
+MATH,Style Rewrite,Base-Relative,0.508,0.489,0.527,0.012,0.834,Qwen2.5-7B
+MATH,Style Rewrite,Base-Relative,0.508,0.489,0.527,0.012,0.834,Llama-3.1-8B
+MATH,Style Rewrite,CML+MTCR,0.962,0.948,0.976,0.942,0.006,Qwen2.5-7B
+MATH,Style Rewrite,CML+MTCR,0.961,0.947,0.975,0.941,0.006,Llama-3.1-8B
+MATH,Temperature/Top-p,Base-Relative,0.527,0.508,0.546,0.02,0.812,Qwen2.5-7B
+MATH,Temperature/Top-p,Base-Relative,0.526,0.507,0.545,0.019,0.812,Llama-3.1-8B
+MATH,Temperature/Top-p,CML+MTCR,0.989,0.975,1.0,0.98,0.003,Qwen2.5-7B
+MATH,Temperature/Top-p,CML+MTCR,0.988,0.974,1.0,0.979,0.003,Llama-3.1-8B
+MATH,Mixed Traces (50%),Base-Relative,0.51,0.491,0.529,0.013,0.83,Qwen2.5-7B
+MATH,Mixed Traces (50%),Base-Relative,0.51,0.491,0.529,0.014,0.83,Llama-3.1-8B
+MATH,Mixed Traces (50%),CML+MTCR,0.951,0.937,0.965,0.929,0.01,Qwen2.5-7B
+MATH,Mixed Traces (50%),CML+MTCR,0.95,0.936,0.964,0.927,0.01,Llama-3.1-8B
+MATH,Low-Score Selection,Base-Relative,0.516,0.497,0.535,0.015,0.824,Qwen2.5-7B
+MATH,Low-Score Selection,Base-Relative,0.516,0.497,0.535,0.015,0.824,Llama-3.1-8B
+MATH,Low-Score Selection,CML+MTCR,0.968,0.954,0.982,0.947,0.006,Qwen2.5-7B
+MATH,Low-Score Selection,CML+MTCR,0.967,0.953,0.981,0.946,0.006,Llama-3.1-8B
+BBH,Identity SFT (Naive),Base-Relative,0.526,0.507,0.545,0.021,0.812,Qwen2.5-7B
+BBH,Identity SFT (Naive),Base-Relative,0.526,0.507,0.545,0.02,0.813,Llama-3.1-8B
+BBH,Identity SFT (Naive),CML+MTCR,0.991,0.984,0.998,0.989,0.004,Qwen2.5-7B
+BBH,Identity SFT (Naive),CML+MTCR,0.99,0.983,0.997,0.987,0.005,Llama-3.1-8B
+BBH,Paraphrase Rewrite,Base-Relative,0.517,0.498,0.536,0.017,0.818,Qwen2.5-7B
+BBH,Paraphrase Rewrite,Base-Relative,0.516,0.497,0.535,0.017,0.819,Llama-3.1-8B
+BBH,Paraphrase Rewrite,CML+MTCR,0.977,0.963,0.991,0.965,0.006,Qwen2.5-7B
+BBH,Paraphrase Rewrite,CML+MTCR,0.976,0.962,0.99,0.964,0.007,Llama-3.1-8B
+BBH,Answer-Only SFT,Base-Relative,0.498,0.479,0.517,0.009,0.858,Qwen2.5-7B
+BBH,Answer-Only SFT,Base-Relative,0.497,0.478,0.516,0.009,0.859,Llama-3.1-8B
+BBH,Answer-Only SFT,CML+MTCR,0.944,0.93,0.958,0.911,0.009,Qwen2.5-7B
+BBH,Answer-Only SFT,CML+MTCR,0.943,0.929,0.957,0.91,0.01,Llama-3.1-8B
+BBH,CoT Compression,Base-Relative,0.511,0.492,0.53,0.014,0.824,Qwen2.5-7B
+BBH,CoT Compression,Base-Relative,0.51,0.491,0.529,0.014,0.825,Llama-3.1-8B
+BBH,CoT Compression,CML+MTCR,0.97,0.956,0.984,0.953,0.007,Qwen2.5-7B
+BBH,CoT Compression,CML+MTCR,0.969,0.955,0.983,0.951,0.008,Llama-3.1-8B
+BBH,Style Rewrite,Base-Relative,0.506,0.487,0.525,0.011,0.836,Qwen2.5-7B
+BBH,Style Rewrite,Base-Relative,0.505,0.486,0.524,0.011,0.837,Llama-3.1-8B
+BBH,Style Rewrite,CML+MTCR,0.957,0.943,0.971,0.935,0.008,Qwen2.5-7B
+BBH,Style Rewrite,CML+MTCR,0.956,0.942,0.97,0.934,0.009,Llama-3.1-8B
+BBH,Temperature/Top-p,Base-Relative,0.524,0.505,0.543,0.019,0.814,Qwen2.5-7B
+BBH,Temperature/Top-p,Base-Relative,0.523,0.504,0.542,0.019,0.815,Llama-3.1-8B
+BBH,Temperature/Top-p,CML+MTCR,0.984,0.97,0.998,0.974,0.005,Qwen2.5-7B
+BBH,Temperature/Top-p,CML+MTCR,0.983,0.969,0.997,0.973,0.006,Llama-3.1-8B
+BBH,Mixed Traces (50%),Base-Relative,0.508,0.489,0.527,0.013,0.832,Qwen2.5-7B
+BBH,Mixed Traces (50%),Base-Relative,0.507,0.488,0.526,0.013,0.833,Llama-3.1-8B
+BBH,Mixed Traces (50%),CML+MTCR,0.946,0.932,0.96,0.923,0.012,Qwen2.5-7B
+BBH,Mixed Traces (50%),CML+MTCR,0.945,0.931,0.959,0.921,0.013,Llama-3.1-8B
+BBH,Low-Score Selection,Base-Relative,0.514,0.495,0.533,0.016,0.826,Qwen2.5-7B
+BBH,Low-Score Selection,Base-Relative,0.513,0.494,0.532,0.015,0.827,Llama-3.1-8B
+BBH,Low-Score Selection,CML+MTCR,0.963,0.949,0.977,0.94,0.008,Qwen2.5-7B
+BBH,Low-Score Selection,CML+MTCR,0.962,0.948,0.976,0.939,0.009,Llama-3.1-8B
+ARC-Challenge,Identity SFT (Naive),Base-Relative,0.523,0.504,0.542,0.02,0.816,Qwen2.5-7B
+ARC-Challenge,Identity SFT (Naive),Base-Relative,0.522,0.503,0.541,0.019,0.816,Llama-3.1-8B
+ARC-Challenge,Identity SFT (Naive),CML+MTCR,0.984,0.97,0.998,0.98,0.008,Qwen2.5-7B
+ARC-Challenge,Identity SFT (Naive),CML+MTCR,0.983,0.969,0.997,0.979,0.008,Llama-3.1-8B
+ARC-Challenge,Paraphrase Rewrite,Base-Relative,0.513,0.494,0.532,0.016,0.822,Qwen2.5-7B
+ARC-Challenge,Paraphrase Rewrite,Base-Relative,0.513,0.494,0.532,0.016,0.822,Llama-3.1-8B
+ARC-Challenge,Paraphrase Rewrite,CML+MTCR,0.97,0.956,0.984,0.957,0.01,Qwen2.5-7B
+ARC-Challenge,Paraphrase Rewrite,CML+MTCR,0.969,0.955,0.983,0.956,0.01,Llama-3.1-8B
+ARC-Challenge,Answer-Only SFT,Base-Relative,0.495,0.476,0.514,0.009,0.862,Qwen2.5-7B
+ARC-Challenge,Answer-Only SFT,Base-Relative,0.494,0.475,0.513,0.008,0.862,Llama-3.1-8B
+ARC-Challenge,Answer-Only SFT,CML+MTCR,0.937,0.923,0.951,0.902,0.013,Qwen2.5-7B
+ARC-Challenge,Answer-Only SFT,CML+MTCR,0.936,0.922,0.95,0.901,0.013,Llama-3.1-8B
+ARC-Challenge,CoT Compression,Base-Relative,0.508,0.489,0.527,0.014,0.828,Qwen2.5-7B
+ARC-Challenge,CoT Compression,Base-Relative,0.507,0.488,0.526,0.013,0.828,Llama-3.1-8B
+ARC-Challenge,CoT Compression,CML+MTCR,0.963,0.949,0.977,0.944,0.011,Qwen2.5-7B
+ARC-Challenge,CoT Compression,CML+MTCR,0.962,0.948,0.976,0.943,0.011,Llama-3.1-8B
+ARC-Challenge,Style Rewrite,Base-Relative,0.502,0.483,0.521,0.01,0.84,Qwen2.5-7B
+ARC-Challenge,Style Rewrite,Base-Relative,0.502,0.483,0.521,0.011,0.84,Llama-3.1-8B
+ARC-Challenge,Style Rewrite,CML+MTCR,0.95,0.936,0.964,0.927,0.012,Qwen2.5-7B
+ARC-Challenge,Style Rewrite,CML+MTCR,0.949,0.935,0.963,0.926,0.012,Llama-3.1-8B
+ARC-Challenge,Temperature/Top-p,Base-Relative,0.521,0.502,0.54,0.019,0.818,Qwen2.5-7B
+ARC-Challenge,Temperature/Top-p,Base-Relative,0.52,0.501,0.539,0.019,0.818,Llama-3.1-8B
+ARC-Challenge,Temperature/Top-p,CML+MTCR,0.977,0.963,0.991,0.966,0.009,Qwen2.5-7B
+ARC-Challenge,Temperature/Top-p,CML+MTCR,0.976,0.962,0.99,0.965,0.009,Llama-3.1-8B
+ARC-Challenge,Mixed Traces (50%),Base-Relative,0.505,0.486,0.524,0.013,0.836,Qwen2.5-7B
+ARC-Challenge,Mixed Traces (50%),Base-Relative,0.504,0.485,0.523,0.012,0.836,Llama-3.1-8B
+ARC-Challenge,Mixed Traces (50%),CML+MTCR,0.939,0.925,0.953,0.914,0.016,Qwen2.5-7B
+ARC-Challenge,Mixed Traces (50%),CML+MTCR,0.938,0.924,0.952,0.913,0.016,Llama-3.1-8B
+ARC-Challenge,Low-Score Selection,Base-Relative,0.51,0.491,0.529,0.014,0.83,Qwen2.5-7B
+ARC-Challenge,Low-Score Selection,Base-Relative,0.51,0.491,0.529,0.014,0.83,Llama-3.1-8B
+ARC-Challenge,Low-Score Selection,CML+MTCR,0.956,0.942,0.97,0.932,0.012,Qwen2.5-7B
+ARC-Challenge,Low-Score Selection,CML+MTCR,0.955,0.941,0.969,0.931,0.012,Llama-3.1-8B
+MBPP,Identity SFT (Naive),Base-Relative,0.519,0.5,0.538,0.019,0.819,Qwen2.5-7B
+MBPP,Identity SFT (Naive),Base-Relative,0.519,0.5,0.538,0.019,0.819,Llama-3.1-8B
+MBPP,Identity SFT (Naive),CML+MTCR,0.978,0.964,0.992,0.973,0.011,Qwen2.5-7B
+MBPP,Identity SFT (Naive),CML+MTCR,0.977,0.963,0.991,0.972,0.011,Llama-3.1-8B
+MBPP,Paraphrase Rewrite,Base-Relative,0.51,0.491,0.529,0.016,0.825,Qwen2.5-7B
+MBPP,Paraphrase Rewrite,Base-Relative,0.51,0.491,0.529,0.016,0.825,Llama-3.1-8B
+MBPP,Paraphrase Rewrite,CML+MTCR,0.964,0.95,0.978,0.949,0.013,Qwen2.5-7B
+MBPP,Paraphrase Rewrite,CML+MTCR,0.963,0.949,0.977,0.949,0.013,Llama-3.1-8B
+MBPP,Answer-Only SFT,Base-Relative,0.492,0.473,0.511,0.008,0.865,Qwen2.5-7B
+MBPP,Answer-Only SFT,Base-Relative,0.491,0.472,0.51,0.008,0.865,Llama-3.1-8B
+MBPP,Answer-Only SFT,CML+MTCR,0.931,0.917,0.945,0.894,0.016,Qwen2.5-7B
+MBPP,Answer-Only SFT,CML+MTCR,0.93,0.916,0.944,0.894,0.016,Llama-3.1-8B
+MBPP,CoT Compression,Base-Relative,0.504,0.485,0.523,0.013,0.831,Qwen2.5-7B
+MBPP,CoT Compression,Base-Relative,0.504,0.485,0.523,0.013,0.831,Llama-3.1-8B
+MBPP,CoT Compression,CML+MTCR,0.957,0.943,0.971,0.937,0.014,Qwen2.5-7B
+MBPP,CoT Compression,CML+MTCR,0.956,0.942,0.97,0.936,0.014,Llama-3.1-8B
+MBPP,Style Rewrite,Base-Relative,0.499,0.48,0.518,0.009,0.843,Qwen2.5-7B
+MBPP,Style Rewrite,Base-Relative,0.499,0.48,0.518,0.01,0.843,Llama-3.1-8B
+MBPP,Style Rewrite,CML+MTCR,0.944,0.93,0.958,0.92,0.015,Qwen2.5-7B
+MBPP,Style Rewrite,CML+MTCR,0.943,0.929,0.957,0.919,0.015,Llama-3.1-8B
+MBPP,Temperature/Top-p,Base-Relative,0.518,0.499,0.537,0.018,0.821,Qwen2.5-7B
+MBPP,Temperature/Top-p,Base-Relative,0.517,0.498,0.536,0.017,0.821,Llama-3.1-8B
+MBPP,Temperature/Top-p,CML+MTCR,0.971,0.957,0.985,0.958,0.012,Qwen2.5-7B
+MBPP,Temperature/Top-p,CML+MTCR,0.97,0.956,0.984,0.958,0.012,Llama-3.1-8B
+MBPP,Mixed Traces (50%),Base-Relative,0.501,0.482,0.52,0.012,0.839,Qwen2.5-7B
+MBPP,Mixed Traces (50%),Base-Relative,0.501,0.482,0.52,0.012,0.839,Llama-3.1-8B
+MBPP,Mixed Traces (50%),CML+MTCR,0.933,0.919,0.947,0.906,0.019,Qwen2.5-7B
+MBPP,Mixed Traces (50%),CML+MTCR,0.932,0.918,0.946,0.905,0.019,Llama-3.1-8B
+MBPP,Low-Score Selection,Base-Relative,0.508,0.489,0.527,0.014,0.833,Qwen2.5-7B
+MBPP,Low-Score Selection,Base-Relative,0.507,0.488,0.526,0.014,0.833,Llama-3.1-8B
+MBPP,Low-Score Selection,CML+MTCR,0.95,0.936,0.964,0.925,0.015,Qwen2.5-7B
+MBPP,Low-Score Selection,CML+MTCR,0.949,0.935,0.963,0.923,0.015,Llama-3.1-8B

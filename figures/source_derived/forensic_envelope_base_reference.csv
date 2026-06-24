@@ -1,0 +1,13 @@
+teacher,reference,auroc,metric,value,fpr_zero,label_hjust
+Qwen2.5-14B,matched reference,0.9983333333333332,AUROC,0.9983333333333332,NA,1.1
+R1-Llama-8B,matched reference,0.9975097384529772,AUROC,0.9975097384529772,NA,1.1
+R1-Qwen-32B,matched reference,0.992725,AUROC,0.992725,NA,1.1
+Qwen2.5-14B,human fallback,0.49864305555555555,AUROC,0.49864305555555555,NA,-0.1
+R1-Llama-8B,human fallback,0.47895937673900946,AUROC,0.47895937673900946,NA,-0.1
+R1-Qwen-32B,human fallback,0.478375,AUROC,0.478375,NA,-0.1
+Qwen2.5-14B,matched reference,NA,FPR at zero threshold,0.00166666666666666,0.00166666666666666,-0.1
+R1-Llama-8B,matched reference,NA,FPR at zero threshold,0.00166666666666666,0.00166666666666666,-0.1
+R1-Qwen-32B,matched reference,NA,FPR at zero threshold,0.00166666666666666,0.00166666666666666,-0.1
+Qwen2.5-14B,human fallback,NA,FPR at zero threshold,0.9983333333333332,0.9983333333333332,1.1
+R1-Llama-8B,human fallback,NA,FPR at zero threshold,0.9983333333333332,0.9983333333333332,1.1
+R1-Qwen-32B,human fallback,NA,FPR at zero threshold,0.9983333333333332,0.9983333333333332,1.1

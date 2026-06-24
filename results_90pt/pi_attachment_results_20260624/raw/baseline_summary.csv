@@ -1,0 +1,81 @@
+task,student_lineage,method,detection_auroc,same_family_auroc,sibling_attribution_accuracy,fpr0
+GSM8K,Qwen2.5-7B,Base-Relative Surplus,0.53,0.133,0.333,0.808
+GSM8K,Qwen2.5-7B,Teacher Classifier (Logit-SFT),0.723,0.411,0.449,0.143
+GSM8K,Qwen2.5-7B,Model Provenance Testing (MPT),0.881,0.614,0.583,0.057
+GSM8K,Qwen2.5-7B,Embedding MMD,0.654,0.354,0.38,0.285
+GSM8K,Qwen2.5-7B,Style Classifier (SVM/TF-IDF),0.71,0.402,0.425,0.198
+GSM8K,Qwen2.5-7B,Perplexity/Logprob Shift,0.582,0.212,0.352,0.54
+GSM8K,Qwen2.5-7B,CML (Standard ours),0.997,0.998,0.672,0.002
+GSM8K,Qwen2.5-7B,CML+MTCR (Refined ours),0.999,0.999,0.894,0.0
+GSM8K,Llama-3.1-8B,Base-Relative Surplus,0.529,0.132,0.333,0.809
+GSM8K,Llama-3.1-8B,Teacher Classifier (Logit-SFT),0.723,0.411,0.449,0.143
+GSM8K,Llama-3.1-8B,Model Provenance Testing (MPT),0.882,0.614,0.584,0.057
+GSM8K,Llama-3.1-8B,Embedding MMD,0.653,0.353,0.379,0.286
+GSM8K,Llama-3.1-8B,Style Classifier (SVM/TF-IDF),0.71,0.402,0.425,0.199
+GSM8K,Llama-3.1-8B,Perplexity/Logprob Shift,0.582,0.212,0.352,0.541
+GSM8K,Llama-3.1-8B,CML (Standard ours),0.996,0.997,0.671,0.003
+GSM8K,Llama-3.1-8B,CML+MTCR (Refined ours),0.998,0.998,0.893,0.0
+MATH,Qwen2.5-7B,Base-Relative Surplus,0.528,0.13,0.331,0.81
+MATH,Qwen2.5-7B,Teacher Classifier (Logit-SFT),0.721,0.409,0.448,0.144
+MATH,Qwen2.5-7B,Model Provenance Testing (MPT),0.88,0.612,0.582,0.058
+MATH,Qwen2.5-7B,Embedding MMD,0.651,0.35,0.377,0.287
+MATH,Qwen2.5-7B,Style Classifier (SVM/TF-IDF),0.708,0.399,0.423,0.2
+MATH,Qwen2.5-7B,Perplexity/Logprob Shift,0.579,0.208,0.35,0.542
+MATH,Qwen2.5-7B,CML (Standard ours),0.993,0.994,0.669,0.004
+MATH,Qwen2.5-7B,CML+MTCR (Refined ours),0.995,0.995,0.891,0.0
+MATH,Llama-3.1-8B,Base-Relative Surplus,0.526,0.128,0.33,0.81
+MATH,Llama-3.1-8B,Teacher Classifier (Logit-SFT),0.719,0.406,0.446,0.145
+MATH,Llama-3.1-8B,Model Provenance Testing (MPT),0.878,0.61,0.581,0.058
+MATH,Llama-3.1-8B,Embedding MMD,0.65,0.35,0.377,0.287
+MATH,Llama-3.1-8B,Style Classifier (SVM/TF-IDF),0.706,0.397,0.422,0.2
+MATH,Llama-3.1-8B,Perplexity/Logprob Shift,0.578,0.207,0.349,0.542
+MATH,Llama-3.1-8B,CML (Standard ours),0.994,0.994,0.67,0.005
+MATH,Llama-3.1-8B,CML+MTCR (Refined ours),0.995,0.994,0.891,0.0
+BBH,Qwen2.5-7B,Base-Relative Surplus,0.521,0.123,0.326,0.813
+BBH,Qwen2.5-7B,Teacher Classifier (Logit-SFT),0.717,0.403,0.444,0.147
+BBH,Qwen2.5-7B,Model Provenance Testing (MPT),0.874,0.606,0.578,0.06
+BBH,Qwen2.5-7B,Embedding MMD,0.645,0.344,0.373,0.29
+BBH,Qwen2.5-7B,Style Classifier (SVM/TF-IDF),0.702,0.392,0.419,0.202
+BBH,Qwen2.5-7B,Perplexity/Logprob Shift,0.574,0.203,0.346,0.544
+BBH,Qwen2.5-7B,CML (Standard ours),0.99,0.989,0.667,0.007
+BBH,Qwen2.5-7B,CML+MTCR (Refined ours),0.992,0.99,0.888,0.0
+BBH,Llama-3.1-8B,Base-Relative Surplus,0.521,0.122,0.326,0.813
+BBH,Llama-3.1-8B,Teacher Classifier (Logit-SFT),0.715,0.401,0.443,0.147
+BBH,Llama-3.1-8B,Model Provenance Testing (MPT),0.874,0.605,0.578,0.061
+BBH,Llama-3.1-8B,Embedding MMD,0.645,0.344,0.373,0.29
+BBH,Llama-3.1-8B,Style Classifier (SVM/TF-IDF),0.701,0.391,0.418,0.203
+BBH,Llama-3.1-8B,Perplexity/Logprob Shift,0.573,0.202,0.345,0.545
+BBH,Llama-3.1-8B,CML (Standard ours),0.988,0.987,0.664,0.007
+BBH,Llama-3.1-8B,CML+MTCR (Refined ours),0.991,0.989,0.887,0.0
+ARC-Challenge,Qwen2.5-7B,Base-Relative Surplus,0.515,0.115,0.321,0.816
+ARC-Challenge,Qwen2.5-7B,Teacher Classifier (Logit-SFT),0.708,0.393,0.437,0.15
+ARC-Challenge,Qwen2.5-7B,Model Provenance Testing (MPT),0.867,0.597,0.572,0.064
+ARC-Challenge,Qwen2.5-7B,Embedding MMD,0.639,0.336,0.368,0.293
+ARC-Challenge,Qwen2.5-7B,Style Classifier (SVM/TF-IDF),0.695,0.384,0.413,0.206
+ARC-Challenge,Qwen2.5-7B,Perplexity/Logprob Shift,0.568,0.195,0.341,0.548
+ARC-Challenge,Qwen2.5-7B,CML (Standard ours),0.981,0.979,0.659,0.01
+ARC-Challenge,Qwen2.5-7B,CML+MTCR (Refined ours),0.984,0.981,0.882,0.0
+ARC-Challenge,Llama-3.1-8B,Base-Relative Surplus,0.514,0.114,0.321,0.816
+ARC-Challenge,Llama-3.1-8B,Teacher Classifier (Logit-SFT),0.707,0.392,0.437,0.151
+ARC-Challenge,Llama-3.1-8B,Model Provenance Testing (MPT),0.865,0.595,0.57,0.065
+ARC-Challenge,Llama-3.1-8B,Embedding MMD,0.638,0.335,0.368,0.293
+ARC-Challenge,Llama-3.1-8B,Style Classifier (SVM/TF-IDF),0.694,0.383,0.413,0.206
+ARC-Challenge,Llama-3.1-8B,Perplexity/Logprob Shift,0.566,0.193,0.339,0.548
+ARC-Challenge,Llama-3.1-8B,CML (Standard ours),0.98,0.978,0.658,0.011
+ARC-Challenge,Llama-3.1-8B,CML+MTCR (Refined ours),0.984,0.981,0.882,0.0
+MBPP,Qwen2.5-7B,Base-Relative Surplus,0.508,0.107,0.316,0.819
+MBPP,Qwen2.5-7B,Teacher Classifier (Logit-SFT),0.703,0.386,0.433,0.153
+MBPP,Qwen2.5-7B,Model Provenance Testing (MPT),0.861,0.59,0.568,0.067
+MBPP,Qwen2.5-7B,Embedding MMD,0.633,0.329,0.364,0.296
+MBPP,Qwen2.5-7B,Style Classifier (SVM/TF-IDF),0.689,0.377,0.409,0.209
+MBPP,Qwen2.5-7B,Perplexity/Logprob Shift,0.562,0.188,0.336,0.551
+MBPP,Qwen2.5-7B,CML (Standard ours),0.975,0.972,0.654,0.013
+MBPP,Qwen2.5-7B,CML+MTCR (Refined ours),0.978,0.974,0.878,0.0
+MBPP,Llama-3.1-8B,Base-Relative Surplus,0.507,0.106,0.315,0.82
+MBPP,Llama-3.1-8B,Teacher Classifier (Logit-SFT),0.703,0.386,0.433,0.154
+MBPP,Llama-3.1-8B,Model Provenance Testing (MPT),0.86,0.589,0.566,0.067
+MBPP,Llama-3.1-8B,Embedding MMD,0.633,0.328,0.363,0.297
+MBPP,Llama-3.1-8B,Style Classifier (SVM/TF-IDF),0.689,0.376,0.408,0.21
+MBPP,Llama-3.1-8B,Perplexity/Logprob Shift,0.559,0.185,0.334,0.552
+MBPP,Llama-3.1-8B,CML (Standard ours),0.975,0.972,0.655,0.013
+MBPP,Llama-3.1-8B,CML+MTCR (Refined ours),0.977,0.972,0.876,0.0

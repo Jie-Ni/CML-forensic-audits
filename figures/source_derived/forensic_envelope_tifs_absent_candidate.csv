@@ -1,0 +1,17 @@
+condition_label,student_group,abstention_min,abstention_max,false_attr_min,false_attr_max,metric,mean,ymin,ymax
+sibling absent,controls,0.995,1,0,0.005,abstention,0.9991666666666666,0.995,1
+sibling absent,controls,0.995,1,0,0.005,false attribution,8.333333333333334e-4,0,0.005
+sibling absent,distilled students,0.315,0.66,0,0.515,abstention,0.5144444444444445,0.315,0.66
+sibling absent,distilled students,0.315,0.66,0,0.515,false attribution,0.15833333333333333,0,0.515
+source absent,controls,0.995,1,0,0.005,abstention,0.9991666666666666,0.995,1
+source absent,controls,0.995,1,0,0.005,false attribution,8.333333333333334e-4,0,0.005
+source absent,distilled students,0.395,0.735,0.265,0.605,abstention,0.5661111111111111,0.395,0.735
+source absent,distilled students,0.395,0.735,0.265,0.605,false attribution,0.4338888888888889,0.265,0.605
+source present,controls,0.995,1,0,0.005,abstention,0.9991666666666666,0.995,1
+source present,controls,0.995,1,0,0.005,false attribution,8.333333333333334e-4,0,0.005
+source present,distilled students,0.315,0.55,0.145,0.515,abstention,0.4627777777777778,0.315,0.55
+source present,distilled students,0.315,0.55,0.145,0.515,false attribution,0.2811111111111111,0.145,0.515
+unrelated present,controls,0.995,1,0,0.005,abstention,0.9991666666666666,0.995,1
+unrelated present,controls,0.995,1,0,0.005,false attribution,8.333333333333334e-4,0,0.005
+unrelated present,distilled students,0.285,0.55,0.145,0.59,abstention,0.45833333333333337,0.285,0.55
+unrelated present,distilled students,0.285,0.55,0.145,0.59,false attribution,0.2916666666666667,0.145,0.59

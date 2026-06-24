@@ -1,0 +1,54 @@
+\pdfminorversion=7
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+
+\usepackage{enumitem}
+\renewcommand{\dbltopfraction}{0.95}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.80}
+\renewcommand{\dblfloatpagefraction}{0.80}
+\setlength{\textfloatsep}{6pt plus 1pt minus 2pt}
+\setlength{\dbltextfloatsep}{6pt plus 1pt minus 2pt}
+\setlength{\floatsep}{6pt plus 1pt minus 2pt}
+\setlength{\dblfloatsep}{6pt plus 1pt minus 2pt}
+\begin{document}
+\title{Capability-Matched Likelihood for Forensic Audits of Reasoning-LLM Distillation}
+
+\author{Jie~Ni,~Chenning~Zhang,~and~Xinting~Zhang%
+\thanks{Corresponding author: Jie Ni (njie@seu.edu.cn).}
+\thanks{Jie Ni and Xinting Zhang are with the State Key Laboratory of Digital Medical Engineering, School of Biological Science and Medical Engineering, Southeast University, Nanjing 211102, China.}
+\thanks{Jie Ni is also with the Digital Science Center, University of Innsbruck, Innsbruck 6020, Austria.}
+\thanks{Chenning Zhang is with the School of Computer Science and Artificial Intelligence, Aliyun School of Big Data, School of Software, Changzhou University, Changzhou, China.}
+}
+
+\markboth{IEEE Transactions on Information Forensics and Security, under review}{Ni \MakeLowercase{\textit{et al.}}: Capability-Matched Likelihood for Distillation Audits}
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract_body.tex}
+\end{abstract}
+
+\begin{IEEEkeywords}
+Model provenance, knowledge distillation, intellectual-property forensics, large language models, hypothesis testing, reasoning models.
+\end{IEEEkeywords}
+
+\input{sections/introduction.tex}
+\input{sections/related_work.tex}
+\input{sections/method.tex}
+\input{sections/experimental_setup.tex}
+\input{sections/results.tex}
+\input{sections/discussion.tex}
+\input{sections/conclusion.tex}
+
+\bibliographystyle{IEEEtranN}
+\begingroup
+\footnotesize
+\bibliography{references}
+\endgroup
+\end{document}

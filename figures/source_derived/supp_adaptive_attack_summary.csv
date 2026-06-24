@@ -1,0 +1,17 @@
+evasion_attack,method,auroc,tpr_at_1pct_fpr,fpr_zero
+Answer-Only SFT,Base-relative,0.4972,0.0091,0.8592
+Answer-Only SFT,CML+MTCR,0.9420999999999999,0.9083,0.0102
+CoT Compression,Base-relative,0.51,0.014,0.8251999999999999
+CoT Compression,CML+MTCR,0.9681,0.9501999999999999,0.0082
+Identity SFT (Naive),Base-relative,0.5251,0.02,0.8132
+Identity SFT (Naive),CML+MTCR,0.9891,0.9863,0.0052
+Low-Score Selection,Base-relative,0.5129,0.0148,0.8271999999999999
+Low-Score Selection,CML+MTCR,0.9611,0.9380999999999999,0.0092
+Mixed Traces (50%),Base-relative,0.5069,0.013,0.8331999999999999
+Mixed Traces (50%),CML+MTCR,0.9440999999999999,0.9201,0.0132
+Paraphrase Rewrite,Base-relative,0.5159,0.017,0.8191999999999999
+Paraphrase Rewrite,CML+MTCR,0.9751,0.9629,0.0072
+Style Rewrite,Base-relative,0.5048,0.011,0.8371999999999999
+Style Rewrite,CML+MTCR,0.9551,0.9332,0.0092
+Temperature/Top-p,Base-relative,0.5232,0.019,0.8152
+Temperature/Top-p,CML+MTCR,0.9821,0.972,0.0062

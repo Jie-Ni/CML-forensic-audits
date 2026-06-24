@@ -1,0 +1,5 @@
+scenario,abstention_rate,false_attribution_rate,coverage
+Sibling Teacher Absent,0.9318,0.0166,0.9798
+Source Teacher Absent,0.9437,0.0138,0.9828
+Unrelated Teacher,0.9678,0.0069,0.9898
+Public Decoy Present,0.9812,0.011,0.9861

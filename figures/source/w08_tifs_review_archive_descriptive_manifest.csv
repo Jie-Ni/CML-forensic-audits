@@ -1,0 +1,6 @@
+artifact_id,asset_type,file_or_path_pattern,content_summary,revision_hash,size,artifact_class,source_run_id,validation_status
+pi-lock-review-01,Raw Traces,`archive/raw_traces//*.jsonl`,Input-output traces from teacher and student sweeps,`sha256:7f92a1...`,14.2 GB,raw_trace,pi_locked_result_summary_20260623,result_lock_descriptive_not_file_verified
+pi-lock-review-02,Adapter Checkpoints,`archive/adapters/qwen_lora_s*.bin`,Fine-tuning weights for student model seeds,`sha256:88ad2c...`,8.5 GB,adapter_checkpoint,pi_locked_result_summary_20260623,result_lock_descriptive_not_file_verified
+pi-lock-review-03,Scored Likelihood Matrices,`archive/scored_matrices/*.npy`,Precomputed log-likelihood values under teachers,`sha256:d3f44a...`,2.1 GB,scored_matrix,pi_locked_result_summary_20260623,result_lock_descriptive_not_file_verified
+pi-lock-review-04,Environment Lock,`archive/conda_env_lock.yml`,Strict package constraints for replication,`sha256:ef23b9...`,12 KB,environment_lock,pi_locked_result_summary_20260623,result_lock_descriptive_not_file_verified
+pi-lock-review-05,Analysis Code,`scripts/reproduce_all_metrics.py`,Complete calculation and p-value validation,`sha256:c3a2f8...`,45 KB,analysis_code,pi_locked_result_summary_20260623,result_lock_descriptive_not_file_verified

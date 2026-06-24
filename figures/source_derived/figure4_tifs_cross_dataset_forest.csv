@@ -1,0 +1,11 @@
+dataset,model,auroc,lineage
+GSM8K,qwen_auroc,0.999,Qwen lineage
+GSM8K,llama_auroc,0.998,Llama lineage
+SVAMP,qwen_auroc,0.982,Qwen lineage
+SVAMP,llama_auroc,0.979,Llama lineage
+ASDiv,qwen_auroc,0.978,Qwen lineage
+ASDiv,llama_auroc,0.975,Llama lineage
+MATH,qwen_auroc,0.953,Qwen lineage
+MATH,llama_auroc,0.948,Llama lineage
+ARC-Challenge,qwen_auroc,0.912,Qwen lineage
+ARC-Challenge,llama_auroc,0.905,Llama lineage

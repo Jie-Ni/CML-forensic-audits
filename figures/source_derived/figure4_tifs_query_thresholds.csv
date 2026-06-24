@@ -1,0 +1,5 @@
+lineage,threshold,trace_size
+Llama lineage,AUROC >= 0.95,100
+Llama lineage,AUROC >= 0.99,500
+Qwen lineage,AUROC >= 0.95,100
+Qwen lineage,AUROC >= 0.99,200

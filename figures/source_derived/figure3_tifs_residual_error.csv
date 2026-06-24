@@ -1,0 +1,5 @@
+lineage,method,error_rate
+Qwen lineage,standard CML,0.32799999999999996
+Qwen lineage,CML+MTCR,0.10599999999999998
+Llama lineage,standard CML,0.34199999999999997
+Llama lineage,CML+MTCR,0.125

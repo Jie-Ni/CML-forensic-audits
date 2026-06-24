@@ -1,0 +1,7 @@
+column,row,label,fill,stroke
+Decision output,Detection,distillation flag,#CDEFE4,#047857
+Decision output,Attribution,candidate teacher,#EEF2FF,#7C6BB5
+Decision output,Threshold,score and threshold,#ECFDF5,#047857
+Audit input,Detection,suspect traces,#F8FAFC,#94A3B8
+Audit input,Attribution,same-base reference,#F8FAFC,#94A3B8
+Audit input,Threshold,candidate likelihood scoring,#F8FAFC,#94A3B8
